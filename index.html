@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- Style sheets here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- internal css here -->
+    <style>
+        #spinner {
+            display: none;
+        }
+
+        #error-result {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- ============================
+            search field here
+    ============================ -->
+    <header class="container mt-5 pt-5">
+        <nav class="navbar-light bg-light d-flex w-50 mx-auto mt-5 p-3 rounded-3">
+            <!-- Navbar content -->
+            <input type="search" name="" id="search-field" class="form-control me-2" placeholder="Search Books Here">
+            <button onclick="searchBook()" class="bg-info btn btn-outline-light">Search</button>
+        </nav>
+    </header>
+    <!-- ============================
+          loading spinner here
+    ============================ -->
+    <div id="spinner" class="text-center mt-5">
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- ============================
+        books counting result here
+    ============================ -->
+    <div id="books-number" class="container">
+
+    </div>
+    <!-- ============================
+            books display here
+    ============================ -->
+    <div class="container text-center">
+        <div id="books" class="row row-cols-1 row-cols-md-4 g-4 mt-5 pt-5">
+        </div>
+    </div>
+    <!-- javascript files are here -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
